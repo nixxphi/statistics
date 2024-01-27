@@ -73,8 +73,10 @@ class Statistics {
     }
   }
 
-
-const list = new Statistics = [
-    97, 72, 29, 72, 97, 63, 92, 97, 82, 92, 98, 100, 97
+const examResults = [
+    97, 98, 82, 72, 29, 72, 97, 63, 92, 97, 82, 92, 98, 100, 97
 ];
-return list.iqr;
+const list = new Statistics(examResults);
+const meanValue = list.mean;
+const stdVal = list.std;
+console.log(`The mean is ${meanValue} and the standard diviation is ${stdVal}`);
